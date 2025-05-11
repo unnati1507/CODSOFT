@@ -1,0 +1,125 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+  background-color:hotpink;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #333 !important;
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+.intro-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(to right,);
+   background: linear-gradient(to right, #FF90BB, #FFC1DA, #F8F8E1, #8ACCD5);
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* About Section Styles */
+#about{
+  background: linear-gradient(to right, #7F55B1,#9B7EBD,#F49BAB, #ffcc99);
+}
+#about img {
+  width:400;
+  height:430px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Skills Section Styles */
+#skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#skills h4 {
+  margin-bottom: 1rem;
+}
+
+/* Projects Section Styles */
+#projects .card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+#projects .card:hover {
+  transform: translateY(-5px);
+}
+
+#projects .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Resume Section Styles */
+#resume .btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+#resume .btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Contact Section Styles */
+#contact form {
+  margin-top: 2rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar-collapse {
+      text-align: center;
+  }
+  .intro-section {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+  #about .col-md-4 {
+      order: 1; /* Image appears first on smaller screens */
+  }
+  #about .col-md-8 {
+      order: 2; /* Text appears second */
+  }
+}

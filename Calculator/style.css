@@ -1,0 +1,106 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    background-color: #333;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+.display {
+    width: 100%;
+    padding: 10px 16px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    text-align: right;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative; /* To contain the ::after pseudo-element */
+}
+
+/* Added to create the inset shadow effect */
+.display::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px; /* Ensure the shadow has rounded corners */
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.button {
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    background-color: #444;
+    color: white;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.number {
+    background-color: #444;
+}
+
+.number:hover {
+    background-color: #555;
+}
+
+.operator {
+    background-color: #f5913e;
+}
+
+.operator:hover {
+    background-color: #e08232;
+}
+
+.equals {
+    background-color: #f5913e;
+    grid-column: span 1;
+}
+
+.equals:hover {
+    background-color: #e08232;
+}
+
+.clear {
+    background-color: #a5a5a5;
+    grid-column: span 1;
+}
+
+.clear:hover {
+    background-color: #909090;
+}
+
+.decimal {
+    background-color: #444;
+}
+
+.decimal:hover{
+    background-color: #555;
+}
